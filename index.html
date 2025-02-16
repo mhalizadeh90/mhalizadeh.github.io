@@ -1,10 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Alizadeh - Game Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin: 30px 0 20px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .about {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-title {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .project-genre {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .project-details {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <h1>Mohammad Alizadeh</h1>
-  <p>Welcome to my portfolio website.</p>
+    <header>
+        <h1>Mohammad Alizadeh</h1>
+        <div class="subtitle">Game Developer</div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate game programmer with extensive experience in Unity3D and C#. My expertise lies in gameplay programming, creating unique game mechanics, and crafting engaging user experiences. I have a particular interest in level design and puzzle mechanics, having worked on various projects ranging from narrative adventures to educational games.</p>
+    </section>
+
+    <h2>Featured Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <div class="project-title">The Overthinking Snake</div>
+            <div class="project-genre">Narrative Adventure</div>
+            <div class="project-details">
+                A narrative-driven adventure game developed in Unity3D. Lead programmer responsible for core gameplay mechanics and narrative systems.
+                <br>
+                <a href="https://youtu.be/FDCTMRzYI5M" class="project-link">Watch Trailer</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Adam's Journey</div>
+            <div class="project-genre">Top-down Adventure</div>
+            <div class="project-details">
+                A feature-rich adventure game featuring dynamic music, dialogue systems, AI patrolling, and complex inventory management.
+                <br>
+                <a href="https://www.youtube.com/watch?v=Kg9HLKQ7bbQ" class="project-link">Watch Gameplay</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">The Happy Neighborhood</div>
+            <div class="project-genre">Multiplayer Tile-based Game</div>
+            <div class="project-details">
+                A multiplayer board game with state machine implementation and dynamic environment features.
+                <br>
+                <a href="https://teamluckydice.itch.io/the-happy-neighborhood" class="project-link">Play on itch.io</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">What If</div>
+            <div class="project-genre">Puzzle Choice-Driven Game</div>
+            <div class="project-details">
+                A unique puzzle game focusing on player choices and consequences. Created during Global Game Jam 2020.
+                <br>
+                <a href="https://teamluckydice.itch.io/what-if" class="project-link">Play on itch.io</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Yum Yum Magic</div>
+            <div class="project-genre">Endless Puzzle-Survival</div>
+            <div class="project-details">
+                An endless puzzle game with survival elements, developed for Ludum Dare 46.
+                <br>
+                <a href="https://double-jammer.itch.io/yumyummagic" class="project-link">Play on itch.io</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Robo Jump</div>
+            <div class="project-genre">2D Platformer</div>
+            <div class="project-details">
+                A platformer featuring advanced physics systems, multiple jump types, and sophisticated camera tracking.
+                <br>
+                <a href="https://www.youtube.com/watch?v=JoQdGxLiKB4" class="project-link">Watch Gameplay</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">The Missing Piece</div>
+            <div class="project-genre">Narrative Adventure</div>
+            <div class="project-details">
+                A top-down adventure game developed during Global Game Jam 2019. Implemented core gameplay mechanics and narrative elements.
+                <br>
+                <a href="https://teamluckydice.itch.io/the-missing-piece" class="project-link">Play on itch.io</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Merged Tiles</div>
+            <div class="project-genre">Match-3, Hyper Casual</div>
+            <div class="project-details">
+                An endless match-3 game for Android, featuring casual gameplay mechanics and engaging progression systems.
+                <br>
+                <a href="https://www.youtube.com/watch?v=NCtBDnf6twc" class="project-link">Watch Gameplay</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Mohammad Alizadeh. All rights reserved.</p>
+    </footer>
 </body>
 </html>
